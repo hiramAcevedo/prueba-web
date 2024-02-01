@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hiram Agustín Acevedo López">
+    <meta name="description" content="Practicando la creación de tablas en la página web esta será nuestra página de contactos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="/img/gatoicon.png">
+    <title>Mis primera página de contacto + tablas</title>
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .fondobloque{
+            /* background-image: url(img/leonesFondo4.jpeg); */
+            background-color: rgb(89, 111, 62);
+            width: 100%;
+            background-size: cover;
+            padding-bottom: 10px;
+        }
+        h1 {
+/*             display: inline-block; */
+            color:rgb(248, 222, 166);
+            text-align: center;
+            font-size: 45px;
+            margin: 0;
+            padding-top:  20px;
+            padding-left: 20px;
+            padding-bottom: 15px;
+        }
+        .bloquelinksheader{
+            text-align: center;
+        }
+        .linkHeader {
+            color:rgb(108, 241, 64);
+            font-size: 20px;
+            margin:20px; 
+            padding: 0%;
+        }
+        .fondotexto{
+            background-color: rgb(248, 222, 166);
+        }
+        h2 {
+            color: rgb(89, 111, 62);
+            font-size: 35px;
+            margin: 0;
+            padding: 20px;
+        }
+        h3 {
+            color: rgb(89, 111, 62);
+            font-size: 27px;
+            margin: 0;
+            padding: 20px;
+        }
+        a{
+            color: rgb(0, 0, 0);
+            font-size: 25px;
+            margin: 0;
+            padding: 20px;
+        }
+        p{
+            color: rgb(89, 111, 62);
+            font-size: 25px;
+            margin: 0;
+            padding: 30px;
+        }
+        table, 
+        td {
+            margin-left: 20px;
+            border: 1px solid rgb(89, 111, 62);
+            color: rgb(89, 111, 62);
+        }
+
+        thead,
+        tfoot {
+            background-color: rgb(89, 111, 62);
+            color: rgb(248, 222, 166);
+        }
+        .formulario{
+            font-size: 25px;
+            color:  rgb(248, 222, 166);
+            width: 2000px;
+            border: 1px solid #CCC;
+            border-radius: 1em;
+        }
+        form li + li{
+            margin-top: 1em;
+        }
+        input{
+            font: 25px times-roman;
+            width: 350px;
+            box-sizing: border-box;
+            border: 1px solid #999;
+        }
+        textarea{
+            font: 25px times-roman;
+            width: 700px;
+            height: 350px;
+            box-sizing: border-box;
+            border: 1px solid #999;
+            vertical-align: top;
+        }
+        input:focus,
+        textarea:focus{
+            border-color: #000;
+        }
+        .button{
+            padding-left: 80px;
+        }
+        button{
+            margin-left: 0.5em;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .listaformulario {
+            margin: 0%; 
+            padding: 10px; 
+            text-align: center; 
+            padding-top: 100px; 
+            padding-bottom:  130px;
+            list-style-type: none;
+        }
+        .tituloFormulario{
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+
+
+
+
+
+<body>
+
+
+    <header class="fondobloque">
+    <h1>Contacta un felino importante</h1>
+    
+    <div class="bloquelinksheader">
+    <a class="linkHeader" href="index.html">Página principal</a>
+    </div>
+
+    </header>
+
+
+    <div class="fondotexto">
+    <h2>Felinos en la televisión</h2>
+    
+    <h3>La pantera rosa</h3>
+    <img style="padding: 20px;" src="/img/contactos/panteraRosa.gif" >
+    <p>La Pantera Rosa (en inglés: The Pink Panther) es el nombre de un personaje de ficción, relacionado con la película de igual título, de 1963.</p>
+    <table>
+        <thead>
+        <tr>
+            <th colspan="2">Contacto</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Número</td>
+            <td>+1 202-918-2132</td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>panterarosa@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Dirección</td>
+            <td>674 Casper Branch, Suite 553, 60769-7590, Myrlview, Maryland, United States</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>Garfield</h3>
+    <img style="padding: 20px;" src="img/contactos/garfield-comprimido.gif" >
+    <p>Garfield es el nombre de una tira de prensa creada por Jim Davis, 
+    que tiene como protagonistas al gato Garfield, al no muy brillante perro Odie, y a su dueño, 
+    el ingenuo Jon Arbuckle (Jon Bónachon en el doblaje hispanoamericano)</p>
+    <table>
+        <thead>
+        <tr>
+            <th colspan="2">Contacto</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Número</td>
+            <td>+1 202-918-2132</td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>garfiel@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Dirección</td>
+            <td>674 Casper Branch, Suite 553, 60769-7590, Myrlview, Maryland, United States</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>Salem Saberghagen (Sabrina)</h3>
+    <img style="padding: 20px;" src="/img/contactos/salem.gif" >
+    <p>Salem Saberhagen es un personaje ficticio de la serie de cómics estadounidense Sabrina the Teenage Witch propiedad de Archie Comics.</p>
+    <table>
+        <thead>
+        <tr>
+            <th colspan="2">Contacto</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Número</td>
+            <td>+1 202-918-2132</td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>salem@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Dirección</td>
+            <td>674 Casper Branch, Suite 553, 60769-7590, Myrlview, Maryland, United States</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>Felinos en el cine</h2>
+    
+    <h3>Pelusa (Stuart Little)</h3>
+    <img style="padding: 20px;" src="/img/contactos/snowbell.jpeg" width="500">
+    <p>Stuart Little (llamada ocasionalmente Stuart Little: Un ratón en la familia en Hispanoamérica) es una película estadounidense de comedia familiar del año 1999. 
+        Dirigida por Rob Minkoff y basada en el libro homónimo de E.B. White. (El gato es pelusa).</p>
+    <table>
+        <thead>
+        <tr>
+            <th colspan="2">Contacto</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Número</td>
+            <td>+1 202-918-2132</td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>pelusa@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Dirección</td>
+            <td>674 Casper Branch, Suite 553, 60769-7590, Myrlview, Maryland, United States</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>Simba (El rey leon)</h3>
+    <img style="padding: 20px;" src="/img/contactos/simba.gif" >
+    <p>Simba es el personaje protagonista de la trilogía de películas El rey león (1994), 
+        The Lion King II: Simba's Pride (1998) y El rey león 3: Hakuna Matata (2004) producidas por Walt Disney Pictures. 
+        Se trata de la personificación de un león africano.</p>
+    <table>
+        <thead>
+        <tr>
+            <th colspan="2">Contacto</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Número</td>
+            <td>+1 202-918-2132</td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>simbarey@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Dirección</td>
+            <td>674 Casper Branch, Suite 553, 60769-7590, Myrlview, Maryland, United States</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>Felinos en la publicidad</h2>
+
+    <h3>Tigre Toño</h3>
+    <img style="padding: 20px;" src="/img/contactos/tonyTheTiger.png" width="500">
+    <p>Tony the Tiger (en español: el Tigre Tony, también conocido en México como Tigre Toño) es la mascota de los cereales de desayuno Frosted Flakes de Kellogg's 
+        (Frosties en Europa y Zucaritas en Latinoamérica) que aparece en el embalaje y publicidad.</p>
+    <table>
+        <thead>
+        <tr>
+            <th colspan="3">Contacto</th> <!--Este pone el bloque negro encima de las 3 columnas-->
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Número</td>
+            <td>+1 202-918-2132</td>
+            <td>+1 202-918-2132</td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>tigre@gmail.com</td>
+            <td>+1 202-918-2132</td>
+        </tr>
+        <tr>
+            <td>Dirección</td>
+            <td>674 Casper Branch, Suite 553, 60769-7590, Myrlview, Maryland, United States</td>
+            <td>+1 202-918-2132</td>
+        </tr>
+        <tr>
+            <td>tablas</td>
+            <td>de</td>
+            <td>4 filas</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2 class="tituloFormulario">¿Quieres recibir un saludo de tu felino favorito?</h2>
+    
+    <form>
+        <ul class="listaformulario" >
+            <li>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="user_name" />
+            </li>
+            <li></li>
+            <label for="name">Carta personalizada</label>
+            <input type="checkbox"> <!--usaré este-->
+            </li>
+            <li>
+                <label for="tel">Telefóno:</label>
+                <input type="tel" id="tel" name="user_tel" />
+            </li>
+            <li>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="user_mail" />
+            </li>
+            <li>
+                <label for="msg">Mensaje:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </li>
+            <li class="button">
+                <button type="submit">Envíe su Mensaje</button>
+            </li>
+        </ul>
+    </form>
+
+    </div>
+
+
+</body>
+</html>
