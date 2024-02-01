@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hiram Agustín Acevedo López">
+    <meta name="description" content="Está es mi primera página web donde experimente con diferentes modificadores de texto y utilice las primeras etiquetas más sencillas,
+    la agregaremos a un sitio más grande con 3 páginas más: la principal, una con tablas y otra agregando videos e imagenes que estarán conectadas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="/img/gatoicon.png">
+    <title>Mi primera página con HTML</title> 
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .fondobloque{
+            /* background-image: url(img/leonesFondo4.jpeg); */
+            background-color: rgb(89, 111, 62);
+            text-align: center;
+            width: 100%;
+            background-size: cover;
+            padding-bottom: 10px;
+        }
+        h1 {
+/*             display: inline-block; */
+            color:rgb(248, 222, 166);
+            text-align: center;
+            font-size: 45px;
+            margin: 0;
+            padding-top:  20px;
+            padding-left: 20px;
+            padding-bottom: 15px;
+        }
+        .fondotexto{
+            background-color: rgb(248, 222, 166);
+        }
+        h2 {
+            color: rgb(89, 111, 62);
+            text-align: center;
+            font-size: 35px;
+            margin: 0;
+            padding: 20px;
+        }
+        h3 {
+            color: rgb(89, 111, 62);
+            text-align: center;
+            font-size: 27px;
+            margin: 0;
+            padding: 20px;
+        }
+        p{
+            color: rgb(89, 111, 62);
+            text-align: center;
+            font-size: 25px;
+            margin: 0;
+            padding: 30px;
+        }
+        .textoclaro{
+            color: rgb(248, 222, 166); 
+        }
+            .linkHeader {
+            color:rgb(108, 241, 64);
+            font-size: 20px;
+            margin:20px; 
+            padding: 0%;
+        }
+        a{
+            color:rgb(108, 241, 64);
+            font-size: 25px;
+            margin:20px; 
+            padding: 0%;
+        }
+        .listas{
+            font-size: 20px;
+            color:  rgb(89, 111, 62);
+        }
+        .alineadoizquierda{
+            text-align: left;
+        }
+        
+    </style>
+
+
+</head>
+<body> 
+
+
+    <header class="fondobloque">
+    <h1 id="Inicio">Mi primera página con HTML <br />
+        (encabezado principal h1)</h1>
+    
+<!--         <h2>A continuación tenemos una lista desordenada</h2>
+    <h3>Lista de páginas para ver la documentación de HTML</h3> -->
+
+    <a class="linkHeader" href="https://developer.mozilla.org/es/docs/Web/HTML/Element/a" target="_blank">Esta etiqueta es un anchor</a>
+    <a class="linkHeader" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Nueva página en otra pestaña</a>
+    <a class="linkHeader" href="#h2">Vamos al siguiente encabezado h2</a>
+    <a class="linkHeader" href="index.html">Página principal</a>
+    
+    </header>
+
+    <div class="fondotexto">
+
+    <p>Da click en el leon:</p>
+    <a href="https://www.youtube.com/watch?v=h0CC8PwxsXw" title="Un leon muy tranquilo ¡que te lleva a un video!" target="_blank"><img style="margin-left:  35%;"
+        src="https://www.shutterstock.com/image-photo/male-adult-lion-lying-down-260nw-2187468819.jpg" 
+        alt="Un león macho con fondo blanco"/></a>
+    <p></p>
+
+    <h2>Vamos a escribir unos párrafos:</h2>
+
+    <div class="fondobloque">
+    <P class="textoclaro">Los textos en <b>HTML</b> que no cambian la sección y no determinan una <i>jerárquia o semántica</i> utilizan la etiqueta <strong>(p)</strong>. <br />
+        Aquí podemos escribir toda clase de textos, noticias, poemas, secretos o lo que tu quieras ¿cómo salto de línea? usa <strong>(br/)</strong>. <br /> 
+        Aunque según la <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" target="_blank">Documentación</a> 
+        no es muy recomendable por los problemas de accesibilidad que puede ocasionar. <br />
+        Recomendación: <u>Usarlos en poemas y direcciones que requieren ese salto de línea arbitrario.</u>
+    </P>
+    </div>
+
+    <h2 id="formatea">Formatea tus textos con las etiquetas adecuadas:</h2>
+
+    <div class="fondobloque">
+    <p class="textoclaro">
+        Este texto tiene bastante <strong>importancia</strong> así que lo acentuaremos con la etiqueta <strong>(strong)</strong>. <br />
+        Cuando simplemente queremos <b>resaltar</b> una palabra que carezca de real importancia podemos usar la etiqueta <strong>(b)</strong>. <br />
+        Es <strong>importante</strong> <em>NO</em> confundir con <em>(em)</em> que agrega énfasis al elemento. <br />
+        Por último tenemos la etiqueta <mark>(mark) que nos ayuda a representar relevancia.</mark>
+    </p>
+    </div>
+
+    <p>        
+        Cada una de estas etiquetas agrega semántica y coherencia a nuestro documento <strong>HTML.</strong>
+    </p>
+    
+    <h3>No quieren a la b</h3>
+
+
+    <div class="fondobloque">
+        <p class="textoclaro">
+        Desgraciadamente para la etiqueta <b>(b)</b> en comparación con sus <em>"primas"</em> se lleva el premio ganador <br />
+        al aportar la menor cantidad de contexto a nuestro documento por lo que es <em>(la menos recomendada)</em> <br />
+
+        según las páginas de referencia para desarrolladores de Mozilla que explican su función:
+        <strong><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b" target="_blank">(b)</a> y 
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="_blank">(strong)</a></strong>.
+        </p>
+    </div>
+    
+    
+    
+    <p>
+        Usar cualquiera de estas 3 opciones es preferible según el proyecto lo demande: <strong>strong</strong>, <em>em</em>, <mark>mark</mark>.
+    </p>
+
+    <h3>¿Y las cursivas y el subrrayado?</h3>
+
+
+    
+    <div class="fondobloque">
+        <p class="textoclaro">
+        Utilizamos esas etiquetas en el <strong>primer párrafo</strong> de <a href="#formatea">Formatea tus textos con las etiquetas adecuadas</a> <br />
+        Desgraciadamente al igual que (b), en las nuevas versiones de <strong>HTML</strong> <br />
+        no queda muy clara la función de (i) y (u) de forma semántica 
+        <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals" target="_blank">referencia.</a>
+        </p>
+    </div>
+
+    <h2>Etiquetas que aprendí hoy lista ordenada</h2>
+    <h3 class="alineadoizquierda">Estructura</h3>
+
+    <div class="listas">
+
+    <ol reversed> 
+        <li>DOCTYPE (declaración)</li> 
+        <li>html (anida todo el contenido)</li>
+        <li>head</li>
+        <li>body</li>
+    </ol>
+
+    <h3 class="alineadoizquierda">Dentro del head</h3>
+
+    <ol> 
+            <li>Meta</li> 
+        <li>title</li>
+        <li>link</li>
+        <li>script</li>
+        <li>style</li>
+    </ol>
+
+    <h3 class="alineadoizquierda">Contenido del body</h3>
+
+    <ol> 
+        <li>h1...h6</li> 
+        <li>p</li>
+        <li>img</li>
+        <li>a</li>
+        <li>div</li>
+        <li>table</li>
+        <li>ul</li>
+        <li>ol</li>
+        <li>li</li>
+        <li>¿menú? (poco soporte)</li>
+        <li>div</li>
+        <li>br</li>
+    </ol>
+
+    <h2 id="h2">Este es un texto de encabezado h2 el menos importante es h6</h2>
+    <p>Estamos justo en el final del body el bloque donde añadimos el contenido de nuestra página y no podemos salir de aquí.</p>
+    <p>Sólo hay un body por página web.</p>
+    </div>
+
+    <div class="fondobloque">
+    <a href="index.html">Página principal</a>
+    <a href="#Inicio">Volver al inicio</a>
+    </div>
+
+</body>
+</html>
