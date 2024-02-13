@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hiram Agustín Acevedo López">
+    <meta name="description" content="Página principal del sitio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="/img/gatoicon.png">
+    <title>Mi primer sitio web con HTML</title>
+
+    <!--Agregamos la etiqueta style para que la página sea un poquito más atractiva con las imagenes que queremos-->
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .fondobloque{
+            background-color: rgb(89, 111, 62);
+            text-align: center;
+            width: 100%;
+            background-size: cover;
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            color:rgb(248, 222, 166);
+            text-align: center;
+            font-size: 45px;
+            margin: 0;
+            padding-top:  20px;
+            padding-left: 20px;
+            padding-bottom: 15px;
+        }
+
+        .fondotexto{
+            background-color: rgb(248, 222, 166);
+        }
+
+        h2 {
+            color: rgb(89, 111, 62);
+            text-align: center;
+            font-size: 35px;
+            margin: 0;
+            padding: 20px;
+        }
+        h3 {
+            color: rgb(89, 111, 62);
+            text-align: center;
+            font-size: 27px;
+            margin: 0;
+            padding: 20px;
+        }
+        a{
+            color:rgb(108, 241, 64);
+            font-size: 25px;
+            margin:20px; 
+            padding: 0%;
+        }
+
+        p{
+            color: rgb(89, 111, 62);
+            text-align: center;
+            font-size: 25px;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .bloquelinksheader{
+            text-align: center;
+        }
+
+        .linkHeader {
+            color:rgb(108, 241, 64);
+            font-size: 20px;
+            margin:20px; 
+            padding: 0%;
+        }
+
+        #masInfo{
+            color:rgb(108, 241, 64);
+            font-size: 25px;
+            margin:20px; 
+            padding: 0%;
+        }
+
+        #fondoLeon{
+            background-image: url(img/leonesFondo4.jpeg);
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+
+        .seccionForm {
+            padding: 300px 0;
+        }
+
+        .seccionForm h1 {
+            text-shadow: 1px 3px 2px black;
+        }
+
+        form {
+            margin: 40px 0;
+        }
+
+        form label, form legend {
+            display: block;
+            font-size: 20px;
+            margin: 0 0 10px;
+        }
+
+        .input-padron {
+            display: block;
+            margin: 0 0 20px;
+            padding: 10px 25px;
+            width: 50%;
+        }
+
+        .checkbox {
+            margin: 20px 0;
+        }
+
+        .submitButton {
+            text-align: center;
+        }
+
+        .enviar {
+            width: 35%;
+            padding: 15px 0;
+            margin: 40px 0 0 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background: #281713;
+            border: none;
+            border-radius: 5px;
+            transition: 1s all;
+            cursor: pointer;
+        }
+
+        .enviar:hover {
+            background: #f90007;
+            transform:scale(1.05);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header class="fondobloque">
+        <h1>Mi primer sitio web con HTML <em>(página principal).</em></h1>
+
+        <div class="bloquelinksheader">
+        <a class="linkHeader" href="mi-primera-pagina-con-html.html">Mi primera página Web con HTML 📝</a> 
+        <a class="linkHeader" href="img-video.html" title="">Imagenes y videos de felinos 🦁</a>
+        <a class="linkHeader" href="tablas-contacto.html" title="">Contacto miau 🐈‍⬛</a>
+        <button class="botoneshead">Ingresa</button>
+        <button class="botoneshead">Registrate</button>
+
+        </div>  
+
+    </header>
+<!--         <img src="img/leonesFondo4.jpeg" alt="Leon descansando" width="100%">  -->
+
+
+    <div class="fondotexto">
+    <h2>Leones y otros felinos</h2>
+    
+    <h3>¿Qué son los felinos?</h3>
+
+    <p>
+    Los felinos son una familia de animales vertebrados que se clasifican dentro de los mamíferos de tipo placentario. <br />
+    También se los conoce como félidos, de hecho, el nombre científico de esta familia es Felidae.
+    </p>
+
+    <h3>¡Si pudieran te comerian vivo!</h3>
+
+    <p>Esta familia se agrupa bajo el orden de los carnívoros, que se caracterizan por tener muelas carniceras y una mandíbula con articulación de tipo bisagra. <br />
+        Los felinos son exclusivamente carnívoros y, en comparación con otros animales, son los que están mejor adaptados a la caza.
+    </p>
+    </div>
+
+
+    <div class="fondobloque" style="text-align: center;">
+    <a href="https://leonesnegrosudg.mx/" target="_blank"><img src="/img/Furia-felina.jpg"  title="Furia felina 🐆" width="400"></a>
+    <a href="https://es.wikipedia.org/wiki/Panthera_tigris" target="_blank"><img src="/img/tigreComiendo.jpeg" title="Tigre comiendo carne de res" width="400"></a>
+    <a href="https://www.youtube.com/watch?v=BhNAc-jCP3M" target="_blank"><img src="/img/gatoBebe.jpeg" title="Alimenten a ese gatito 🍼" width="400"></a>
+    
+    <br />
+
+    <a id="masInfo" href="https://enciclopediadebiologia.com/felinos/">Más información</a>
+
+    </div>
+
+    <div id="fondoLeon">
+        <div class="seccionForm">
+        <h1>Suscríbete para recibir las mejores novedades de los Felinos</h1>
+
+                <div class="botonForm">
+                    <a href="tablas-contacto.html#tituloFormulario"><button class="enviar">Contáctenos</button></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="fondobloque">
+        <a href="index.html">Página principal</a>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hiram Agustín Acevedo López">
+    <meta name="description" content="Practicando la creación de tablas y formularios en la página web esta será nuestra página de contactos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="/img/gatoicon.png">
+    <title>Mis primera página de contacto + tablas</title>
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(248, 222, 166);
+        }
+
+        .fondobloque{
+            background-color: rgb(89, 111, 62);
+            text-align: center;
+            width: 100%;
+            background-size: cover;
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            color:rgb(248, 222, 166);
+            text-align: center;
+            font-size: 45px;
+            margin: 0;
+            padding-top:  20px;
+            padding-left: 20px;
+            padding-bottom: 15px;
+        }
+
+        .bloquelinksheader{
+            text-align: center;
+        }
+
+        .linkHeader {
+            color:rgb(108, 241, 64);
+            font-size: 20px;
+            margin:20px; 
+            padding: 0%;
+        }
+
+        a{
+            color:rgb(108, 241, 64);
+            font-size: 25px;
+            margin:20px; 
+            padding: 0%;
+        }
+
+        h2 {
+            color: rgb(89, 111, 62);
+            text-align: center;
+            font-size: 35px;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h3 {
+            color: rgb(89, 111, 62);
+            font-size: 27px;
+            margin: 0;
+            padding: 20px;
+        }
+
+        p{
+            color: rgb(89, 111, 62);
+            font-size: 25px;
+            margin: 0;
+            padding: 30px;
+        }
+
+        table, 
+        td {
+            margin-left: 20px;
+            border: 1px solid rgb(89, 111, 62);
+            color: rgb(89, 111, 62);
+        }
+
+        thead,
+        tfoot {
+            background-color: rgb(89, 111, 62);
+            color: rgb(248, 222, 166);
+        }
+
+        .bloqueCentro {
+            width: 72%;
+            margin: 0 auto;
+            background-color: rgb(248, 222, 166);
+        }
+
+        .tituloFormulario {
+            text-align: center;
+        }
+
+        form {
+            padding: 0 0 40px;
+        }
+
+        form label, form legend {
+            display: block;
+            font-size: 20px;
+            margin: 0 0 10px;
+        }
+
+        .input-padron {
+            display: block;
+            margin: 0 0 20px;
+            padding: 10px 25px;
+            width: 50%;
+        }
+
+        .input-padronF {
+            display: block;
+            margin: 0 0 20px 19px;
+            padding: 10px 25px;
+            width: 50%;
+        }
+
+        .entrega {
+            margin: 19px;
+        }
+
+        fieldset {
+            border-width: 2px;
+            border-style: none;
+        }
+
+        .checkbox {
+            margin: 20px 0;
+        }
+
+        .submitButton {
+            text-align: center;
+        }
+
+        .enviar {
+            width: 40%;
+            padding: 15px 0;
+            margin: 40px 0 0 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background: rgb(89, 111, 62);
+            border: none;
+            border-radius: 5px;
+            transition: 1s all;
+            cursor: pointer;
+        }
+
+        .enviar:hover {
+            background: rgb(58, 164, 23);
+            transform:scale(1.05);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <header class="fondobloque">
+    <h1>Contacta un felino importante</h1>
+    
+    <div class="bloquelinksheader">
+    <a class="linkHeader" href="index.html">Página principal</a>
+    </div>
+
+    </header>
+
+    <main class="bloqueCentro">
+    <div>
+    <h2>Felinos en la televisión</h2>
+    
+    <h3>La pantera rosa</h3>
+    <img style="padding: 20px;" src="/img/contactos/panteraRosa.gif" >
+    <p>La Pantera Rosa (en inglés: The Pink Panther) es el nombre de un personaje de ficción, relacionado con la película de igual título, de 1963.</p>
+    <table>
+        <thead>
+        <tr>
+            <th colspan="2">Contacto</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Número</td>
+            <td>+1 202-918-2132</td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>panterarosa@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Dirección</td>
+            <td>674 Casper Branch, Suite 553, 60769-7590, Myrlview, Maryland, United States</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>Garfield</h3>
+    <img style="padding: 20px;" src="img/contactos/garfield-comprimido.gif" >
+    <p>Garfield es el nombre de una tira de prensa creada por Jim Davis, 
+    que tiene como protagonistas al gato Garfield, al no muy brillante perro Odie, y a su dueño, 
+    el ingenuo Jon Arbuckle (Jon Bónachon en el doblaje hispanoamericano)</p>
+    <table>
+        <thead>
+        <tr>
+            <th colspan="2">Contacto</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Número</td>
+            <td>+1 202-918-2132</td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>garfiel@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Dirección</td>
+            <td>674 Casper Branch, Suite 553, 60769-7590, Myrlview, Maryland, United States</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>Salem Saberghagen (Sabrina)</h3>
+    <img style="padding: 20px;" src="/img/contactos/salem.gif" >
+    <p>Salem Saberhagen es un personaje ficticio de la serie de cómics estadounidense Sabrina the Teenage Witch propiedad de Archie Comics.</p>
+    <table>
+        <thead>
+        <tr>
+            <th colspan="2">Contacto</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Número</td>
+            <td>+1 202-918-2132</td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>salem@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Dirección</td>
+            <td>674 Casper Branch, Suite 553, 60769-7590, Myrlview, Maryland, United States</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>Felinos en el cine</h2>
+    
+    <h3>Pelusa (Stuart Little)</h3>
+    <img style="padding: 20px;" src="/img/contactos/snowbell.jpeg" width="500">
+    <p>Stuart Little (llamada ocasionalmente Stuart Little: Un ratón en la familia en Hispanoamérica) es una película estadounidense de comedia familiar del año 1999. 
+        Dirigida por Rob Minkoff y basada en el libro homónimo de E.B. White. (El gato es pelusa).</p>
+    <table>
+        <thead>
+        <tr>
+            <th colspan="2">Contacto</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Número</td>
+            <td>+1 202-918-2132</td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>pelusa@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Dirección</td>
+            <td>674 Casper Branch, Suite 553, 60769-7590, Myrlview, Maryland, United States</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>Simba (El rey leon)</h3>
+    <img style="padding: 20px;" src="/img/contactos/simba.gif" >
+    <p>Simba es el personaje protagonista de la trilogía de películas El rey león (1994), 
+        The Lion King II: Simba's Pride (1998) y El rey león 3: Hakuna Matata (2004) producidas por Walt Disney Pictures. 
+        Se trata de la personificación de un león africano.</p>
+    <table>
+        <thead>
+        <tr>
+            <th colspan="2">Contacto</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Número</td>
+            <td>+1 202-918-2132</td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>simbarey@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Dirección</td>
+            <td>674 Casper Branch, Suite 553, 60769-7590, Myrlview, Maryland, United States</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>Felinos en la publicidad</h2>
+
+    <h3>Tigre Toño</h3>
+    <img style="padding: 20px;" src="/img/contactos/tonyTheTiger.png" width="500">
+    <p>Tony the Tiger (en español: el Tigre Tony, también conocido en México como Tigre Toño) es la mascota de los cereales de desayuno Frosted Flakes de Kellogg's 
+        (Frosties en Europa y Zucaritas en Latinoamérica) que aparece en el embalaje y publicidad.</p>
+    <table>
+        <thead>
+        <tr>
+            <th colspan="3">Contacto</th> <!--Este pone el bloque negro encima de las 3 columnas-->
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Número</td>
+            <td>+1 202-918-2132</td>
+            <td>+1 202-918-2132</td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>tigre@gmail.com</td>
+            <td>+1 202-918-2132</td>
+        </tr>
+        <tr>
+            <td>Dirección</td>
+            <td>674 Casper Branch, Suite 553, 60769-7590, Myrlview, Maryland, United States</td>
+            <td>+1 202-918-2132</td>
+        </tr>
+        <tr>
+            <td>tablas</td>
+            <td>de</td>
+            <td>4 filas</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2 class="tituloFormulario" id="tituloFormulario">¿Quieres recibir un saludo de tu felino favorito?</h2>
+    
+    <div class="bloqueCentro">
+        <form>
+    
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="input-padron" required>
+    
+            <label for="correoelectronico">Correo Electrónico</label>
+            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+    
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX" pattern="[0-9]{10}">
+    
+            <label for="mensaje">Mensaje</label>
+            <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+    
+            <fieldset>
+                <legend>¿A donde mandamos su saludo?</legend>
+    
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+    
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+
+                <label for="radio-direccion"><input type="radio" name="contacto" value="direccion" id="radio-direccion">Dirección</label>
+
+                <textarea name="direccion" id="textdireccion" cols="70" rows="10" class="input-padron" placeholder="Escribe tu dirección aquí" required></textarea>
+                
+            </fieldset>
+    
+            <fieldset>
+            <legend>¿Cuál es tu felino favorito? (Elige uno para que te haga tu saludo)</legend>
+            <select>
+                <option>La pantera rosa</option>
+                <option>Garfield</option>
+                <option>Salem Saberghagen (Sabrina)</option>
+                <option>Pelusa (Stuart Little)</option>
+                <option>Simba (El rey leon)</option>
+                <option>Tigre Toño</option>
+            </select>
+            </fieldset>
+
+            <label for="fechadeEntrega" class="entrega">Seleccione su fecha de entrega</label>
+            <input type="date" class="input-padronF" required>
+    
+            <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de Leones y otro Felinos?</label>
+            
+            <div class="submitButton">
+            <input type="submit" value="Enviar formulario" class="enviar">
+            </div>
+
+        </form>
+
+        <form>
+        <h2>Regístrate</h2>
+            
+            <fieldset>
+            <label for="nombreUsuario">Nombre de usuario</label>
+            <input type="text" class="input-padron" required>
+
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="password" id="contraseña" class="input-padron" minlength="8" required>
+
+            <div class="submitButton">
+                <input type="submit" value="Entra" class="enviar">
+            </div>
+            </fieldset>
+        </div>
+        </form>
+
+    </div>
+    </main>
+    
+    <div class="fondobloque">
+    <a href="index.html">Página principal</a>
+    </div>
+
+</body>
+</html>
